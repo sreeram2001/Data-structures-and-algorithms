@@ -1,0 +1,23 @@
+def mini_index(i,arr):
+    mini = arr[i]
+    index = i
+    
+    for k in range(i,len(arr)):
+        if arr[k]<mini:
+            mini = arr[k]
+            index = k
+            
+    return index
+
+def selectionsort(arr):
+    for i in range(0,len(arr)):
+        min_index = mini_index(i,arr)
+        
+        if i!=min_index:
+            arr[i], arr[min_index] = arr[min_index], arr[i]
+    
+    return arr
+
+arr = [5, 2, 6, 7, 2, 1, 0, 3]  
+sort = selectionsort(arr)  
+print(sort)
