@@ -4,8 +4,8 @@
 def circular(arr,n):
     a = []
     l = len(arr)
-    for i in range(n-1,n-1+l):
-        a.append(arr[i%l])
+    for i in range(n,n+l):                      #can be from n-1 to n-1+1 depending on the question
+         a.append(arr[i%l])
     
     return a
 
