@@ -20,7 +20,7 @@ for k in dict:
     maxi = dict[k]                  #gets frequency of the element
     if maxi>= count_max:
         count_max = maxi            #updates the max frequency
-        maxvalue_index = k          #element with max counts
+        maxvalue_index = k          #element with max count
         
 print(maxvalue_index)
 
