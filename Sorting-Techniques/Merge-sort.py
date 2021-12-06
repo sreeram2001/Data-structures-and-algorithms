@@ -49,4 +49,4 @@ def mergesort(arr):
     
 #user-code
 array = [7,9,3,1,2,6]                   #unsorted - input array
-print(mergesort(array))                #call the function bubblesort - also prints sorted array
+print(mergesort(array))                #call the function - also prints sorted array
